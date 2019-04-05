@@ -14,4 +14,5 @@ https://www.facebook.com/b00t2root
 
 ## Write-ups
 
-* crypto <- scatter me 
+* crypto <- scatter me
+* crypto <- genetics 
