@@ -12,7 +12,7 @@ J'ouvre mon [fichier](Bibliography.txt).
 ACCAGTAAAACGTTGAGACAGTTGAATATCAAACTACACCGAATTCATATGTCACAGCGGCCGACACAGATGATAACA
 ```
 
-Le première chose que je remarque, c'est la présence de seulement 4 lettres différentes dans notre code : [su]A[/su], [su]C[/su], [su]T[/su] et [su]G[/su].
+Le première chose que je remarque, c'est la présence de seulement 4 lettres différentes dans notre code : *A*, *C*, *T* et *G*.
 
 Je lance un recherche sur google, aussitôt je tombe sur des sites qui parle de codage génétique (qui d'ailleurs est le titre du chall).
 
@@ -44,8 +44,8 @@ Et voilà, nous obtenons le flag.
 
 ```bash
 ./DNAdecoder.sh Bibliography.txt
-flag is dnaCrypto1sAwesomcat
+flag is dnaCrypto1sAwesom
 ```
 ## Flag
 
-[su]b00t2root{dnaCrypto1sAwesomcat}[/su]
+b00t2root{dnaCrypto1sAwesom}
