@@ -112,9 +112,9 @@ Nous déployons le contrat en appuyant sur ``deploy``, puis nous entrons son adr
 
 ![rem2 - SwampCTF'19](rem2.png)
 
-Le but des challenges de ce ctf, est que la fonction isComplete renvoie True.
+Le principe des challenges de ce CTF, va être que la fonction ``isComplete()`` renvoie ``True``.
 
-Ici le but va être d'être le ``Owner`` de ce contrat.
+Ici, notre objectif va être d'être le ``Owner`` de ce contrat.
 
 Ainsi, en lisant le code nous remarquons qu'un appel à la fonction ``contructor`` avec l'envoi de ``0.5 ether`` (Apppuyez sur ``constructor`` en ayant mis ``0.5 ether`` dans le champs ``Value`` sur ``Remix``).
 Alors nous sommes donc maintenant dans la table des ``owners``, la condition ``isComplete()`` est vérifié.
@@ -123,7 +123,7 @@ Alors nous sommes donc maintenant dans la table des ``owners``, la condition ``i
 
 ![flag2 - SwampCTF'19](flag2.png)
 
-Ce challenge est simple car il servait d'introduction aux autres challenges du CTF.
+Ce challenge est simple, car il servait d'introduction aux autres challenges du CTF.
 
 ## Flag
 
