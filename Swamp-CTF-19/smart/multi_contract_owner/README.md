@@ -116,7 +116,7 @@ Le principe des challenges de ce CTF, va être que la fonction ``isComplete()`` 
 
 Ici, notre objectif va être d'être le ``Owner`` de ce contrat.
 
-Ainsi, en lisant le code nous remarquons qu'un appel à la fonction ``contructor`` avec l'envoi de ``0.5 ether`` (Apppuyez sur ``constructor`` en ayant mis ``0.5 ether`` dans le champs ``Value`` sur ``Remix``).
+Ainsi, en lisant le code nous remarquons qu'un appel à la fonction ``contructor`` avec l'envoi de ``0.5 ether`` (Appuyez sur ``constructor`` en ayant mis ``0.5 ether`` dans le champs ``Value`` sur ``Remix``) nous donne une entrée dans la table ``owners``.
 Alors nous sommes donc maintenant dans la table des ``owners``, la condition ``isComplete()`` est vérifié.
 
 ![flag1 - SwampCTF'19](flag1.png)
