@@ -17,7 +17,7 @@
 	
 	Celui ci va nous servir de Wallet pour nos transactions qvec la blockchain de test.
 	
-	Paramétrer le wallet sur le Ropsen Test Network, puis deposer de ``l'ether Faucet`` pour nos transaction.
+	Paramétrer le wallet sur le ``Ropsen Test Network``, puis deposer de ``l'ether Faucet`` pour nos transaction.
 
 	![inst1 - SwampCTF'19](inst1.png)
 
