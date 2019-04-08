@@ -14,3 +14,4 @@ Challenges in the Pwn, RE, Smart Contract, Web, Crypto, Forensics, and Misc. cat
 ## Write-ups
 
 * forensics -> leap of faith
+* smart -> multi owner contract
