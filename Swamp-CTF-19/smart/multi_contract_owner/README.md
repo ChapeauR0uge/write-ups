@@ -33,7 +33,7 @@
 
 	![rem1 - SwampCTF'19](rem1.png)
 
-	Si la case Account est vide, il s'agit d'un bug connu, dans la console du navigateur ajouté la commande suivante:
+	Si la case Account est vide, il s'agit d'un bug connu, dans la console du navigateur entrez la commande suivante:
 	```console
 	window.ethereum.enable()
 	```
