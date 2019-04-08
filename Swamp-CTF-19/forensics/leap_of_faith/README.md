@@ -6,7 +6,7 @@
 
 ## Résolution
 
-D'apres la description, il s'agit d'une citation du film matrix, avec comme particularité de nous parler d'outils de stego, avec une [image de neo](src/leap_of_faith.jpeg).
+D'apres la description, il s'agit d'une citation du film matrix, avec comme particularité de nous parler d'outils de stego, avec une [image de neo](src/leap_of_faith.jpg).
 
 La première chose que je fais, c'est une verification du type de fichier :
 ```bash
