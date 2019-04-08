@@ -11,35 +11,38 @@
 1. Pre-requis :
 
 	* Apprentissage du langage solidity : [CryptoZombie](https://cryptozombies.io/)
-	* Quelques bases en Javascript
+	* Quelques bases en Javascript.
 
 2. Installation du plugin [Metasmask](https://metamask.io/) :
 	
-Celui ci va nous servir de Wallet pour nos transactions.
-Parametrer le wallet sur le Ropsen Test Network, puis deposer de l'ether Faucet pour nos transaction.
+	Celui ci va nous servir de Wallet pour nos transactions qvec la blockchain de test.
+	
+	Paramétrer le wallet sur le Ropsen Test Network, puis deposer de ``l'ether Faucet`` pour nos transaction.
 
-![inst1 - SwampCTF'19](inst1.png)
+	![inst1 - SwampCTF'19](inst1.png)
 
-Voila notre plugin metasmask est pret.
+	Voilà notre plugin metasmask est prêt.
 
-3. Parametrage de l'IDE [Remix](https://remix.ethereum.org/)
+3. Paramétrage de l'IDE [Remix](https://remix.ethereum.org/)
 
-Remix est un IDE du langage solidity qui va nous permettre d'interagire avec les contrats deployer dans la blockchain.
-Le choix du compilateur doit etre le meme ecrit dans le code a cote de pragma.
-Maintenant dans la section run :
+	``Remix`` est un IDE du langage ``solidity`` qui va nous permettre d'interagire avec les contrats deployés dans la blockchain.
 
-![rem1 - SwampCTF'19](rem1.png)
+	Le choix de la version du compilateur doit être le même que celui de notre code (valeur à côté du pragma).
+	
+	Maintenant dans la section run de ``Remix``:
 
-Si la case account est vide, alors dans la console du navigateur ajouter la commande suivante
-```console
-window.ethereum.enable()
-```
+	![rem1 - SwampCTF'19](rem1.png)
+
+	Si la case Account est vide, il s'agit d'un bug connu, dans la console du navigateur ajouté la commande suivante:
+	```console
+	window.ethereum.enable()
+	```
 
 ### Le challenge
 
 ![desc - SwampCTF'19](desc.png)
 
-Nous avons le contrat suivant a deployer sur la blockchain :
+Nous avons le contrat suivant à deployer dans la blockchain :
 ```solidity
 pragma solidity ^0.4.24;
 
@@ -103,22 +106,24 @@ contract Ownable {
 
 }
 ```
-Nous deployons le contrat puis entrons son addresse dans Remix:
+Nous déployons le contrat en appuyant sur ``deploy``, puis nous entrons son adresse dans Remix:
 
 ![depl - SwampCTF'19](depl.png)
 
-Nous entrons l'addresse de notre contrat dans Remix :
-
 ![rem2 - SwampCTF'19](rem2.png)
 
-Le but est que notre fonction isComplete renvoie True.
-En lisant le code nous remarquons qu'un appel a la fonction contructeur avec un cout de 0.5 ether, nous permet de verifier la condition isComplete().
+Le but des challenges de ce ctf, est que la fonction isComplete renvoie True.
+
+Ici le but va être d'être le ``Owner`` de ce contrat.
+
+Ainsi, en lisant le code nous remarquons qu'un appel à la fonction ``contructor`` avec l'envoi de ``0.5 ether`` (Apppuyez sur ``constructor`` en ayant mis ``0.5 ether`` dans le champs ``Value`` sur ``Remix``).
+Alors nous sommes donc maintenant dans la table des ``owners``, la condition ``isComplete()`` est vérifié.
 
 ![flag1 - SwampCTF'19](flag1.png)
 
 ![flag2 - SwampCTF'19](flag2.png)
 
-Challenge tres simple qui servait juste d'introduction aux autres challenges.
+Ce challenge est simple car il servait d'introduction aux autres challenges du CTF.
 
 ## Flag
 
