@@ -15,9 +15,9 @@
 
 2. Installation du plugin [Metasmask](https://metamask.io/) :
 	
-	Celui ci va nous servir de Wallet pour nos transactions qvec la blockchain de test.
+	Celui-ci va nous servir de Wallet pour nos transactions avec la blockchain de test.
 	
-	Paramétrer le wallet sur le ``Ropsen Test Network``, puis deposer de ``l'ether Faucet`` pour nos transaction.
+	Paramétrer le wallet sur le ``Ropsen Test Network``, puis deposer de ``l'ether Faucet`` pour nos futures transactions.
 
 	![inst1 - SwampCTF'19](inst1.png)
 
