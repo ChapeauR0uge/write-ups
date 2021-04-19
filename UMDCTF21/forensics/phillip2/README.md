@@ -76,20 +76,25 @@ $ sudo vol.py -f philip-2.raw --profile=Linux_phillipx64 linux_find_file -i 0xff
 ```
 
 * A little tutorial for import:
+
 ![Phillip 2 - UMDCTF'21](tool.PNG)
 
 * You need to select the INBOX file.
+
 ![Phillip 2 - UMDCTF'21](mbox.PNG)
 
 * We found 5 email, but only two interesting.
+
 ![Phillip 2 - UMDCTF'21](mail1.PNG)
 
 * We have a `Invoice.zip` and a `password` 
+
 ![Phillip 2 - UMDCTF'21](chung1.PNG)
 
 * We unzip `invoice.zip` with the password
 
 ![Phillip 2 - UMDCTF'21](flag1.PNG)
+
 Et voilà, we found the flag !
 
 ## Flag
@@ -97,5 +102,4 @@ Et voilà, we found the flag !
 **UMDCTF-{M3g4_Ch4#g4$}** 
 
 :trollface:
-
 ![Phillip 2 - UMDCTF'21](phil2score.PNG)
